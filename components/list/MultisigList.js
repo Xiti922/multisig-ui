@@ -29,7 +29,7 @@ const MultisigList = () => {
             setLoading(true)
             const account = await getKey(chain.chain_id)
             const address = account.bech32Address
-            const res = await getAllMultisigOfAddress(address)
+            const res = await getAllMultisigByAddress(address)
             setMultisigs([...res])
             setLoading(false)
         }
