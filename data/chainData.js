@@ -41,21 +41,21 @@ export const chainData = [
         govExplorer: "https://www.mintscan.io/cosmos/proposals/",
         logo: "/images/logo/atom.png"
     },
-    // {
-    //     chain_id: "akashnet-2",
-    //     denom: "uakt",
-    //     name: "akash",
-    //     prefix: "akash",
-    //     color: "linear-gradient(to right, #cb262a, #ed3324 49%)",
-    //     rpc: "https://rpc-akash-ia.notional.ventures/",
-    //     api: "https://api-akash-ia.notional.ventures/",
-    //     explorer: "https://www.mintscan.io/akash/",
-    //     txExplorer: "https://www.mintscan.io/akash/txs/",
-    //     valExplorer: "https://www.mintscan.io/akash/validators/",
-    //     govExplorer: "https://www.mintscan.io/akash/proposals/",
-    //     logo: "/images/logo/akt.png"
-    // },
-    // {
+    {
+        chain_id: "morocco-1",
+        denom: "ucht",
+        name: "cht",
+        prefix: "chronic",
+        color: "linear-gradient(to right, #cb262a, #ed3324 49%)",
+        rpc: "https://rpc-chronic.zenchainlabs.io/",
+        api: "https://api-chronic.zenchainlabs.io/",
+        explorer: "https://chronic.zenscan.io/",
+        txExplorer: "https://rpc-chronic.zenchainlabs.io/txs/",
+        valExplorer: "https://chronic.zenscan.io/validators/",
+        govExplorer: "https://chronic.zenscan.io/proposals/",
+        logo: "/images/logo/akt.png"
+    },
+    //{
     //     chain_id: "emoney-3",
     //     denom: "ungm",
     //     name: "emoney",
