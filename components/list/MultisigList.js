@@ -47,7 +47,7 @@ const MultisigList = () => {
                 setMultisigs([])
                 return
             }
-            const res = await getAllMultisigOfAddress(address)
+            const res = await getAllMultisigByAddress(address)
             setMultisigs([...res])
             setParams({ ...params, total: res.length })
             setLoading(false)
@@ -64,7 +64,7 @@ const MultisigList = () => {
             const chainId = idToChainId[currentId]
             const account = await getKey(chainId)
             const address = account.bech32Address
-            const res = await getAllMultisigOfAddress(address)
+            const res = await getAllMultisigByAddress(address)
             setMultisigs([...res])
             setParams({ ...params, total: res.length })
             setLoading(false)
@@ -100,7 +100,7 @@ const MultisigList = () => {
                     setLoading(false)
                     return
                 }
-                const res = await getAllMultisigOfAddress(address)
+                const res = await getAllMultisigByAddress(address)
                 setMultisigs([...res])
                 setParams({ ...params, total: res.length, page: 1 })
                 setLoading(false)
