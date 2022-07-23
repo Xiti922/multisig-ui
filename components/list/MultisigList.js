@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext, useCallback } from "react"
-import { getAllMultisigOfAddress } from "../../libs/multisig"
+import { getAllMultisigByAddress } from "../../libs/multisig"
 import MultisigRowView from "../data_view/MultisigRowView"
 import { ChainContext } from "../Context"
 import { getKey } from "../../libs/keplrClient"
