@@ -49,6 +49,6 @@ export const getAllMultisigByAddress = async (address) => {
 }
 
 export const checkIfMultisigExist = async (address) => {
-    const res = await axios.post(`/api/}multisig/${address}`, { address })
+    const res = await axios.post(`/api/multisig/${address}`, { address })
     return (res.data)
 }
