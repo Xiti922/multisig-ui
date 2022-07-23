@@ -131,6 +131,56 @@ export const chainObj = {
             high: 0.03,
         },
     },
+     "morocco-1": {
+        chainId: "morocco-1",
+        chainName: "morocco-1",
+        rpc: "https://rpc-chronic.zenchainlabs.io/",
+        rest: "https://api-chronic.zenchainlabs.io/",
+        bip44: {
+            coinType: 118,
+        },
+        bech32Config: {
+            bech32PrefixAccAddr: "chronic",
+            bech32PrefixAccPub: "chronic" + "pub",
+            bech32PrefixValAddr: "chronic" + "valoper",
+            bech32PrefixValPub: "chronic" + "valoperpub",
+            bech32PrefixConsAddr: "chronic" + "valcons",
+            bech32PrefixConsPub: "chronic" + "valconspub",
+        },
+        currencies: [
+            {
+                coinDenom: "CHT",
+                coinMinimalDenom: "ucht",
+                coinDecimals: 6,
+                coinGeckoId: "",
+            },
+            {
+                coinDenom: "CGAS",
+                coinMinimalDenom: "ucgas",
+                coinDecimals: 6,
+                coinGeckoId: "",
+            },
+        ],
+        feeCurrencies: [
+            {
+                coinDenom: "CGAS",
+                coinMinimalDenom: "ucgas",
+                coinDecimals: 6,
+                coinGeckoId: "",
+            },
+        ],
+        stakeCurrency: {
+            coinDenom: "CHT",
+            coinMinimalDenom: "ucht",
+            coinDecimals: 6,
+            coinGeckoId: "",
+        },
+        gasPriceStep: {
+            low: 0.01,
+            average: 0.025,
+            high: 0.03,
+        },
+    },
     "bitcanna-1": {
         chainId: "bitcanna-1",
         chainName: "bitcanna",
